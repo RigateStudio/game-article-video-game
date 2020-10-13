@@ -1,10 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
+@import 'base';
+@import 'cards';
 
-$black: rgb(0, 0, 0);
-
-p {
-  color: $black;
-}
 
 #searchBar {
   width: 100%;
@@ -14,3 +11,4 @@ p {
   padding: 5px 10px;
   font-size: 12px
 }
+

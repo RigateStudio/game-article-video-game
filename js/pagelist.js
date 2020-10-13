@@ -18,13 +18,14 @@ const PageList = (argument = "") => {
             response.results.forEach((article) => {
               console.log(response);
               articles += `
-                    <div class="card" style="width:25rem">
-                      <img class="card-img-top" style=width:auto;max-width:25rem;height:auto;padding:1rem;" src="${article.background_image}">
-                      <h1>${article.name}</h1>
-                      <span>${article.platforms.map(system => {
-                        return `<button>${system.platform.name}</button>`
-                      }).join(' ')}</span>
-                      <a href = "#pagedetail/${article.id}">${article.id}</a>
+                    <div class="card">
+                    <a href="#pagedetail/${article.id}"><img class="card-img-top" src="${article.background_image}"></a>
+                      <div class="card-body">
+                        <h1 class="card-title"><a href="#pagedetail/${article.id}">${article.name}</a></h1>
+                        <span>${article.platforms.map(system => {
+                          return `<button>${system.platform.name}</button>`
+                        }).join(' ')}</span>
+                      </div>
                     </div>
                   `;
             });
