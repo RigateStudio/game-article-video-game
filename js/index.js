@@ -20,7 +20,7 @@ console.log(searchBar.value);
 
 var searching = function searching() {
   console.log(searchBar.value);
-  
+  window.location = getElementById;
 };
 
 document.getElementById("searchButton").addEventListener("click", searching);
