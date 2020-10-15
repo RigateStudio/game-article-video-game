@@ -13,7 +13,7 @@ module.exports = (env) => {
       publicPath: '/',
       filename: 'bundle.js'
     },
-    watch: false,
+    watch: true,
     watchOptions: {
       aggregateTimeout: 600,
       poll: 1000,      
