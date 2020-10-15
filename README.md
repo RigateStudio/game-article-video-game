@@ -1,1 +1,1 @@
-Ready to use webpack app
+The Hype ProGame est un site intégrant l'API de réalisé par <a href="https://github.com/balfoldi"> Boris Alfodi </a>, <a href="https://github.com/hsravo"> Stéphane Ravoninjatovo ✨ </a> et <a href="https://github.com/RigateStudio"> Lucas Gautier </a>

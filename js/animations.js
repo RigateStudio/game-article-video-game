@@ -19,14 +19,16 @@ let spawnSliding = (defineTarget) => {
 const animout = (defineTarget) => {
     anime({
         targets: defineTarget,
-        scaleY: 1
+        scaleY: 1,
+
     })
 }
 
 const rotating = (defineTarget) => {
     anime({
         targets: defineTarget,
-        scaleY: 1
+        rotate: 360,
+        loop: true
     })
 }
 

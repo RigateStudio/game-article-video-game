@@ -5,6 +5,14 @@ const Dotenv = require("dotenv-webpack");
 module.exports = (env) => {
   console.log("NODE_ENV", env.NODE_ENV);
   return {
+    entry: [
+      './src/index.js'
+    ],
+    output: {
+      path: __dirname,
+      publicPath: '/',
+      filename: 'bundle.js'
+    },
     watch: true,
     watchOptions: {
       aggregateTimeout: 600,

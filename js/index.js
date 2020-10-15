@@ -2,6 +2,10 @@ import '../sass/styles.scss';
 import { routes } from "./route";
 import 'bootstrap';
 import moment from "moment";
+import { rotating } from "./animations";
+
+rotating(".fa-hourglass-half")
+
 console.log(moment().format("YYYY[-]MM[-]DD"))
 
 let pageArgument;
