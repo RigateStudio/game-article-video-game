@@ -1,10 +1,150 @@
-$black: rgb(26, 25, 25);
+$black: rgb(25, 25, 25);
 $white: #fff;
+$red: #D32323;
 
-p {
+p, ul {
   color: $white;
 }
 
+.white{
+	color: #FF0000;
+}
+
+.container_pimp {
+	padding: 100px;
+	color:$white;
+	#welcome h1 {
+	font-size: 80px;
+	font-family: 'Staatliches', cursive;
+	margin-left:5rem;
+	margin-right:5rem;
+	}
+	#welcome-text h4 {
+	font-size: 18px;
+	font-family: 'Commissioner', sans-serif;
+	text-align:justify;
+	margin-left:5rem;
+	margin-right:5rem;
+	}
+}
+
+.navbar{
+  background-color: red($color: #ff0000);
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-title {
+	height:45px;
+	margin-top:2rem;
+	margin-bottom:3rem;
+	a {
+	margin-top:2rem;
+	margin-bottom:2rem;
+	margin-left: 5rem;
+	font-size:30px;
+	padding:1rem;
+	font-family: 'Staatliches', cursive;
+	border: 1px solid $white;
+		&:hover {
+			background-color:$red;
+			border: 1px solid $red;
+			color:$white;
+			transition:0.5s;
+		}
+	}
+}
+
+.collapse {
+	font-family: 'Staatliches', cursive;
+}
+
+.h4 {
+  font-size: 24px;
+}
+
 body {
-    background-color: $black
+    background-color: $black;
   }
+
+.hide {
+    max-height: 0 !important;
+}
+
+.main-card {
+	width: 330px;
+	background-color: $red;
+	&:hover{
+		color: $white;
+		text-decoration: none;
+	  }	
+}
+
+.dropdown {
+  width: 449px;
+  background-color: $red;
+  outline: none;
+  &:hover {
+    outline: none;
+    box-shadow: none;
+   }
+}
+
+.dropdown .title{
+	margin: .3em .3em .3em .3em;	
+	width: 100%;
+}
+
+.dropdown .title .fa-angle-right{
+	float: right;
+	margin-right: .7em;
+	transition: transform .3s;
+}
+
+.dropdown .menu{
+	transition: max-height .5s ease-out;
+	max-height: 20em;
+	overflow: hidden;
+}
+
+///////////////
+
+.background_image{
+  width: 100%;
+}
+
+a{
+  color: $white;
+  text-decoration: none;
+
+  &:hover{
+    color: $white;
+    text-decoration: none;
+  }
+}
+.animed-link, .animed-link:visited {
+	text-decoration: none;
+	position: relative;
+	
+	&:after {
+		content: '';
+		height: 3px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		background: $red;
+		transition: 0.2s;
+	}
+
+	&:hover:after {
+		width: 100%;
+	}
+	
+	&.block {
+		display: block;
+		padding: 0.5em;
+	}
+}
+
+

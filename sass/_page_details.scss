@@ -1,0 +1,55 @@
+@mixin redOrWhite($color) {
+  font-family: 'Staatliches', cursive;
+  color:$color
+}
+
+#description {
+  font-family: 'Commissioner', sans-serif;
+  h3 {
+    font-family: 'Staatliches', cursive;
+    color: $white;
+  }
+}
+
+.background_image{
+  width: 100%;
+  background-position: center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom:3rem;
+}
+
+#website{
+  background-color: $red;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Staatliches', cursive;
+  &:hover{
+    background-color: #8A1212;
+    transition:0.5s;
+  }
+
+}
+
+.front-title {
+  @include redOrWhite($white);
+  font-size:55px;
+}
+
+.subtitle{
+  @include redOrWhite($red);
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+
+.small-title {
+  @include redOrWhite($white);
+}
+
+.screenshots{
+  width: 300px;
+}

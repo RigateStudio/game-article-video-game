@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html class='h-100'>
+
 <head>
-	<title>Web app</title>
+  <title>Web app</title>
   <link rel='stylesheet' href='dist/bundle.css' />
+  <script src="https://kit.fontawesome.com/46962466a1.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class='h-100'>
+  <div id="navbar" class="navbar container_pimp">
+    <h1 id="navbar_element_one" class="red-title"><a href="#"> The ✨ Hyper Progame ✨ </h1></a>
+    <div class="search_bubble">
+      <input class="icon input is-large pl-4" type="text" id="searchBar" placeholder="Find a game..." ; />
+    </div>
+  </div>
 
-  <form class="form-inline my-2 my-lg-0">
-    <input class="input is-large" type="text" style="display:block mb-auto" id="searchBar" placeholder="Search your favorite game here" ; /><br /><br />
-    <input class="button is-info" type="submit" id="searchButton"/>
-  </form>
+  <section id="pageContent" class='w-100'>
+    <div class='w100 d-flex justify-content-center title-red'><i class="fas fa-hourglass-half fa-8x"></i></div>
+  </section>
 
-  <a href="#">Home</a>
-  <a href="#pagelist">PageList</a>
-  <a href="#pagelist/borderlands">PageList borderlands</a>
-
-  <section id="pageContent">Choissez un lien</section>
 </body>
 
-<script src='dist/bundle.js'></script>
+<script src=' dist/bundle.js'>
+</script>
+<script src="js/anime.min.js"></script>
+
 </html>

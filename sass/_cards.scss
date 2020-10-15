@@ -1,34 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-
-.card {
-    width:auto;
-    max-width:25rem;
+@mixin cardPattern {
+    box-sizing: border-box;
+    display:block;
+    width:20rem;
+    max-height:auto;
     background-color:rgb(39, 37, 37);
     color:white;
     border-radius: 20px;
-    .card-body {
+    overflow:hidden;
+}
 
+.card-box{
+    height: 350px;
+    margin-bottom: 35px;
+}
+
+.card {
+    &:hover {
+        z-index: +1;
     }
-
-
-    .card-title {
-        font-size:30px;
-        font-family: 'Staatliches', cursive;
-        a {
-            color:white;
-            text-decoration: none;
-            &:hover {
-                transition: 0.3s;
-                color:rgb(167, 165, 165);
+    min-height: 350px;
+    @include cardPattern();
+        .card-text {
+            display:none;
+            table {
+                margin-left:1.29rem;
+                margin-right:1.29rem;
+                margin-bottom:2rem;
+                th {
+                    padding-right:1.25rem;
+                }
+                td {
+                    word-break: break-all;
+                }
             }
         }
-    }
+        &:hover {
+            .card-text {
+                display:inline;
+                font-family: 'Commissioner', sans-serif;
+                p {
+                    margin-left:1.29rem;
+                    margin-right:1.29rem;
+                    font-size:18px;
+                }
+            }
+            transition:0.2s;
+            -ms-transform: scale(1.03);
+            -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+            max-height:auto;
+        }
 
-    img {
-        width:auto;
-        max-width:25rem;
-        height:auto;
+        .card-title {
+            font-size:30px;
+            font-family: 'Staatliches', cursive;
+            a {
+                color:white;
+                text-decoration: none;
+                &:hover {
+                    transition: 0.3s;
+                    color:rgb(167, 165, 165);
+                }
+            }
+        }
+
+    .card-img-top {
+        object-fit:inherit;
+        width:20rem;
+        max-height:200px;
         border-radius: 20px 20px 0px 0px;
         &:hover {
             opacity:0.7;
@@ -37,4 +76,45 @@
 
         
     }
+
+    span {
+        img {
+            height:1.25rem;
+            width:auto;
+        }
+    }
 }
+
+.card-spawning {
+    animation-name: spawn;
+    animation-duration: 1s;
+    position: relative;
+  }
+  
+  @keyframes spawn {
+    from {
+      opacity: 0;
+      top: -100px
+    }
+    to {
+    opacity: 1; 
+    top: 0px; 
+    }
+  }
+  
+  .card-depoping {
+    animation-name: depop;
+    animation-duration: 1s;
+    position: relative;
+  }
+  
+  @keyframes depop {
+    from {
+      opacity: 1;
+      top: 0px;
+    }
+    to {
+    opacity: 0; 
+    top: 100px; 
+    }
+  }

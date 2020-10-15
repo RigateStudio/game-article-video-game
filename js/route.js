@@ -10,3 +10,4 @@ export { routes };
 import { Home } from "./home"
 import { PageList } from "./pagelist";
 import { PageDetail } from "./page_detail";
+//
