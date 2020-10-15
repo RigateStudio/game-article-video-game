@@ -14,7 +14,7 @@ const Home = (argument = "") => {
   console.log(pageContent)
   pageContent.innerHTML = `
   <div class="container_pimp" id='p-welcom'>
-      <div id="welcome"><h1> Welcome to the Game finder 🌱 </h1> </div>                          
+      <div id="welcome"><h1> Welcome to the hyper pro Game finder 🌱 </h1> </div>                          
       <div id="welcome-text"><h4> The Hyper Progame is the world’s premier event for
       computer and video games and related products. At The Hyper
       Progame, the video game industry’s top talent pack the Los
@@ -56,4 +56,4 @@ const Home = (argument = "") => {
 
   PageList(`?dates=2019-10-10,${moment().format("YYYY[-]MM[-]DD")}&ordering=-added`, document.getElementById("anticipatedgames"));
 }
-export { Home };
+export { Home };;

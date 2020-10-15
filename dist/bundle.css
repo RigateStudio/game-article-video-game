@@ -10190,8 +10190,12 @@ p, ul {
   transition: 0.5s;
 }
 
-  
 .collapse {
+  font-family: "Staatliches", cursive;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+}
+.collapse .card {
   font-family: "Staatliches", cursive;
 }
 
