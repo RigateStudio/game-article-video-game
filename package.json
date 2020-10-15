@@ -4,7 +4,7 @@
     "production": "webpack --env.NODE_ENV=production --config webpack.config.js",
     "start:dev": "webpack-dev-server --env.NODE_ENV=developement",
     "start": "node server.js", 
-    "heroku-postbuild": "webpack --env.NODE_ENV=production --config webpack.config.js" 
+    "heroku-postbuild": "webpack -p --env.NODE_ENV=production --config webpack.config.js" 
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
